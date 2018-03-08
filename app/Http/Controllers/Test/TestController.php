@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Test;
 
+use App\Model\Menu;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,8 +15,8 @@ class TestController extends Controller
      */
     public function index()
     {
-        echo 11;die;
-        return view('index');
+        $meun = Menu::orderBy('sort', 'desc');
+        return view('Test\index');
     }
 
     /**
@@ -25,7 +26,7 @@ class TestController extends Controller
      */
     public function create()
     {
-        //
+        return view('');
     }
 
     /**

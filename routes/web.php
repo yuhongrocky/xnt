@@ -19,5 +19,5 @@ Route::group(['namespace' => 'admin', 'prefix' => 'admin'],function (){
 //    Route::get('/','');
 });
 
-//Route::resource('test','TestController');
+Route::resource('test','Test\TestController');
 Route::get('operation','Test\OperationController@index');

@@ -7,6 +7,15 @@
  */
 ?>
 
+<style>
+    table{
+
+        border: 1px solid #21181c;
+    }
+    table tr td {
+        border: 1px solid #21181c;
+    }
+</style>
 <h1><?php echo $title?></h1>
 <table>
     <tr>
@@ -19,8 +28,8 @@
             <td><?= $user->name?></td>
             <td><?= $user->email?></td>
             <td>
-                <a href=""></a>
-                <a></a>
+                <a href="">编辑</a>
+                <a href="">删除</a>
             </td>
         </tr>
     <?php ?>
