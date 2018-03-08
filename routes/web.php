@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['namespace' => 'admin', 'prefix' => 'admin'],function (){
+//    Route::get('/','');
+});
+
+//Route::resource('test','TestController');
+Route::get('operation','Test\OperationController@index');
